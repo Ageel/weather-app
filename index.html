@@ -84,7 +84,7 @@
             $("#pressure").html(json.main.pressure);
             $("#humidity").html(json.main.humidity);
         });
-    })
+    });
 
     // Optional Code for temperature conversion
     var fahrenheit = true;
@@ -94,7 +94,8 @@
             $("#temperature").text(((($("#temperature").text() - 32) * 5) / 9));
         }
         fahrenheit = false;
-    });
+    })
+});
 </script>
 </body>
 </html>
